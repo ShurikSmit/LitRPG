@@ -10,6 +10,7 @@ public class Main {
         //создание (class CreateCharacter) или загрузка персонажа (class LoadSaveCharacter)
         //запуск игры (class EngineMain схема игрового процесса)
         //санька пидор
+        //,,,
         EngineMain engineMain = new EngineMain();
         engineMain.startGame();
     }
