@@ -4,7 +4,7 @@ public class СreateCharacter {
     private static int CharSTR = 0;
     private static int CharAGIL = 0;
     private static int CharINT = 0;
-    private static String CharName = "Рикардо Миллос";
+    private static String CharName = "F";
     public void setCharSTR(int newCharSTR){
         CharSTR+=newCharSTR;
     }
@@ -23,6 +23,6 @@ public class СreateCharacter {
     public int getCharINT(){
         return CharINT;
     }
-    
+
 
 }
