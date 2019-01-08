@@ -9,8 +9,6 @@ public class Main {
         //настройки (ну будет файлик конфиг с которого будем тянуть параметры игры, размер экрана и т.д.)
         //создание (class CreateCharacter) или загрузка персонажа (class LoadSaveCharacter)
         //запуск игры (class EngineMain схема игрового процесса)
-        //санька пидор
-        //,,,
         EngineMain engineMain = new EngineMain();
         engineMain.startGame();
     }
