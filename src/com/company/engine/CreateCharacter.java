@@ -1,4 +1,6 @@
 package com.company.engine;
+import com.company.engine.jasypt.Cript;
+
 import java.io.*;
 import java.lang.*;
 public class CreateCharacter {
@@ -38,10 +40,14 @@ public class CreateCharacter {
         text+= "AGIL:"+getCharAGIL()+"\n";
         text+= "INT:"+getCharINT()+"\n";
         text+= "STR:"+getCharSTR()+"\n";
+        Cript cript = new Cript();
+        text = cript.StartCript(text);
         fr.write(text);
         fr.close();
     }
-    //если 1 стат плюсуется, 0 отнимается
+    //Смена статов на вход идёт
+    //type если 1 стат плюсуется, 0 отнимается
+    //String CharSTR, CharAGIL, CharINT
     public void changeStats(int type, String StatsName){
         int number;
         if (type == 0){
