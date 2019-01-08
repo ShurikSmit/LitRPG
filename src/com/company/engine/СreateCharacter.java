@@ -23,6 +23,6 @@ public class СreateCharacter {
     public int getCharINT(){
         return CharINT;
     }
-
+    
 
 }
