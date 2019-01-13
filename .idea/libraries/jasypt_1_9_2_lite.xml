@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="jasypt-1.9.2-lite">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../lib/jasypt-1.9.2-lite.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Telegram Desktop/jasypt-1.9.2-lite.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
