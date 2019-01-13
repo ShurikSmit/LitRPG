@@ -9,24 +9,28 @@ public class CreateCharacter {
     private static int CharINT = 0;
     private static String CharName = "Рикардо Милос";
     public void setCharSTR(int newCharSTR){
+        if (newCharSTR>=0)
         CharSTR+=newCharSTR;
     }
     public int getCharSTR(){
         return CharSTR;
     }
     public void setCharAGIL(int newCharAGIL){
+        if (newCharAGIL>=0)
         CharAGIL+=newCharAGIL;
     }
     public int getCharAGIL(){
         return CharAGIL;
     }
     public void setCharINT(int newCharINT){
+        if (newCharINT>=0)
         CharINT+= newCharINT;
     }
     public int getCharINT(){
         return CharINT;
     }
     public void setCharName(String newCharName){
+        if (newCharName!=null)
         CharName = newCharName;
     }
     public String getCharName(){
@@ -46,11 +50,11 @@ public class CreateCharacter {
         fr.close();
     }
     //Смена статов на вход идёт
-    //type если 1 стат плюсуется, 0 отнимается
+    //type если true стат плюсуется, false отнимается
     //String CharSTR, CharAGIL, CharINT
-    public void changeStats(int type, String StatsName){
+    public void changeStats(boolean type, String StatsName){
         int number;
-        if (type == 0){
+        if (!type){
             number=-1;
         }else{
             number=1;
