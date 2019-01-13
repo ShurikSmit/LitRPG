@@ -4,7 +4,7 @@ public class Money {
     private int moneySilver;
     private int moneyGold;
     private int moneyCopper;
-    Money(){
+    public Money(){
         moneyGold = 0;
         moneySilver=0;
         moneyCopper = 0;
