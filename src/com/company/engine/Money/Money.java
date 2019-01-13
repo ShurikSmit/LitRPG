@@ -21,7 +21,7 @@ public class Money {
     public void setMoneyCopper(int moneyCopper) {
 
         if (moneyCopper>99){
-            System.out.println("moneyCopperSet"+moneyCopper);
+
             this.moneyCopper=moneyCopper%100;
             setMoneySilver((moneyCopper-this.moneyCopper)/100);
         }else {
