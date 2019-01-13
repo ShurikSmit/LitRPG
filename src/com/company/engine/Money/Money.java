@@ -21,8 +21,9 @@ public class Money {
     public void setMoneyCopper(int moneyCopper) {
 
         if (moneyCopper>99){
+            System.out.println("moneyCopperSet"+moneyCopper);
             this.moneyCopper=moneyCopper%100;
-            setMoneySilver((moneyCopper-moneyCopper%100)/100+getMoneySilver());
+            setMoneySilver(moneyCopper-this.moneyCopper);
         }else {
             this.moneyCopper = moneyCopper;
         }
@@ -43,7 +44,7 @@ public class Money {
     public void setMoneySilver(int moneySilver) {
         if (moneySilver>99){
             this.moneySilver=moneySilver%100;
-            setMoneyGold(((moneySilver-moneySilver%100)/100)+getMoneyGold());
+            setMoneyGold(moneySilver-this.moneySilver);
         }else {
             this.moneySilver = moneySilver;
         }
@@ -53,11 +54,19 @@ public class Money {
         System.out.println(getMoneyGold()+" золотых "+getMoneySilver()+" себрянных "+getMoneyCopper()+" медных");
     }
    public void changeMoney(boolean add, int moneyGold, int moneySilver, int moneyCopper){
-        if (add){
-            moneyCopper+=getMoneyCopper();
-            setMoneyCopper(moneyCopper);
-        }else {
-
-        }
+        int changeCopper = convertedToCopper(moneyGold, moneySilver, moneyCopper);
+        if (add) setMoneyCopper(convertedToCopper()+changeCopper);
+        else  setMoneyCopper(convertedToCopper()-changeCopper);
+   }
+   public int convertedToCopper(){
+        int Copper = getMoneyGold()*10000+getMoneySilver()*100+getMoneyCopper();
+        return Copper;
+    }
+   public int convertedToCopper(int moneyGold,int moneySilver, int moneyCopper) {
+        int Copper = moneyGold*10000+moneySilver*100+moneyCopper;
+        return Copper;
+   }
+   public void convertedCopperToBasic(int Copper){
+        setMoneyCopper(Copper);
    }
 }

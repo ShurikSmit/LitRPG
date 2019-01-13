@@ -44,6 +44,7 @@ public class CreateCharacter {
         text+= "AGIL:"+getCharAGIL()+"\n";
         text+= "INT:"+getCharINT()+"\n";
         text+= "STR:"+getCharSTR()+"\n";
+        text+= "MONEY:0";
         Cript cript = new Cript();
         text = cript.StartCript(text);
         fr.write(text);
