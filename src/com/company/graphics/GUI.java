@@ -1,56 +1,47 @@
 package com.company.graphics;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
+import javax.swing.border.*;
 
 public class GUI extends JFrame {
-    JFrame frame;
-    private JButton button_1 = new JButton("Start Game");
-    private JButton button_2 = new JButton("Setting");
-    private JButton button_3 = new JButton("Exit");
-    private JPanel main_panel = new JPanel();
-
-
     public void TestGUI() {
-
         CREATE_MAIN_GUI();
     }
-
-
     public void CREATE_MAIN_GUI()  {
-        frame = new JFrame();
-        frame.setLayout(new GridBagLayout());
+        JButton button_start = new JButton("Start");
+        JButton button_setting = new JButton("Setting");
+        JButton button_exit = new JButton("Exit");
+        JFrame frame_m = new JFrame();
+        JPanel main_panel = new JPanel();
 
 
-        frame.setLocationRelativeTo(null);
+        //настройки разрешения и видимости
+        frame_m.setTitle("LitRPG");
+        frame_m.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frame_m.setVisible(true);
+        frame_m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        frame.setBounds(100, 100, 250, 100);
-        setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame_m.setContentPane(new BgPanel(frame_m)); // картинка
 
-        frame.setContentPane(new BgPanel());
-        Container m_con = frame.getContentPane();
-        m_con.setLayout(new FlowLayout());
+        JPanel buttonPanel = new JPanel( new GridLayout(3, 1, 0, 0) );
 
-        m_con.add(button_1);
-        m_con.add(button_2);
-        m_con.add(button_3);
+        buttonPanel.setBorder( new EmptyBorder(240, 233, 0, 0) );
+        //buttonPanel.setOpaque( false );
 
-        frame.setTitle("LitRPG");
-        frame.setSize(700, 600);
-        frame.setVisible(true);
+        button_start.setPreferredSize(new Dimension(160,45));
+        button_setting.setPreferredSize(new Dimension(160,45));
+        button_exit.setPreferredSize(new Dimension(160,45));
 
 
-        button_3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                button_3.setText("You Pidor");
-            }
-        });
+        buttonPanel.add(button_start);
+        buttonPanel.add(button_setting);
+        buttonPanel.add(button_exit);
+
+        frame_m.add(buttonPanel);
+
+        frame_m.repaint();
+
+
     }
 }
