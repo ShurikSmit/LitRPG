@@ -26,8 +26,10 @@ public class TradeMoney extends Money {
         if (playerMoneyCheck.convertedToCopper()>convertedToCopper() || personMoney.convertedToCopper()>convertedToCopper())
             return true;
         else
+            System.out.println();
             return false;
     }
+
     public void giveMoney(Money personMoney){
         if(checkMoney(personMoney)) {
             PlayerMoney playerMoney = new PlayerMoney();
@@ -62,6 +64,7 @@ public class TradeMoney extends Money {
     }
 
     public void takeMoney(){
+
         PlayerMoney playerMoney =new PlayerMoney();
         int newPlayerMoney = playerMoney.convertedToCopper()+convertedToCopper();
         playerMoney.convertedCopperToBasic(newPlayerMoney);
