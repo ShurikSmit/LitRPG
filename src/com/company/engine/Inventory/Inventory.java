@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Inventory {
     private String owner;
     private int size;
-    private ArrayList<Item> items = new ArrayList<Item>(size);
+    private ArrayList<Item> items = new ArrayList<>(size);
     public void changeSize(int numb){
         if(numb >= 0)
         this.size += numb;
@@ -31,7 +31,7 @@ public class Inventory {
     // возвращаемый список можна заменить на список Item, если будут картинки
     // нужен для отображения шмоток
     public ArrayList<String> getItemsList(){
-        ArrayList<String> names = new ArrayList<String>(items.size());
+        ArrayList<String> names = new ArrayList<>(items.size());
         for (Item item:items) {
             names.add(item.getName());
         }

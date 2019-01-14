@@ -10,9 +10,9 @@ public class TradeItems {
     private boolean verification = false;
     private TradeMoney tradeMoney;
     private Inventory playerInv;
-    private ArrayList<Item> sellItems = new ArrayList<Item>();
+    private ArrayList<Item> sellItems = new ArrayList<>();
     private Inventory traderInv;
-    private ArrayList<Item> buyItems = new ArrayList<Item>();
+    private ArrayList<Item> buyItems = new ArrayList<>();
 
     //ссылки на объкты Inventory персов
     TradeItems(Inventory playerInv, Inventory traderInv){

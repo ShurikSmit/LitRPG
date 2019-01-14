@@ -1,11 +1,12 @@
 package com.company.engine.Inventory;
+
 import com.company.engine.Money.*;
 
 public class Item {
     private String name;
     private String type;
     private String rank;
-    //мб нужно паблик, но вроде нельзя
+    // нужно паблик, но вроде нельзя
     public Money price = new Money();
     // тут должна быть картинка шмотки
 
