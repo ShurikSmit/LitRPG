@@ -23,11 +23,13 @@ public class TradeMoney extends Money {
     }
     public boolean checkMoney(Money personMoney){
         PlayerMoney playerMoneyCheck = new PlayerMoney();
-        if (playerMoneyCheck.convertedToCopper()>convertedToCopper() || personMoney.convertedToCopper()>convertedToCopper())
-            return true;
-        else
+        if (playerMoneyCheck.convertedToCopper()>convertedToCopper() || personMoney.convertedToCopper()>convertedToCopper()){
+            System.out.println("Поверка пройдена");
+            return true;}
+        else{
+            System.out.println("Поверка не пройдена");
             System.out.println();
-            return false;
+            return false;}
     }
 
     public void giveMoney(Money personMoney){
@@ -62,6 +64,7 @@ public class TradeMoney extends Money {
         playerMoney.showMoney();
         }
     }
+
 
     public void takeMoney(){
 
