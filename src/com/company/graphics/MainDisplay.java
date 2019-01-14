@@ -4,10 +4,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
-class BgPanel extends JPanel implements ActionListener{
+
+class BgPanel extends JPanel  implements ActionListener{
 
     JFrame frame;
 
@@ -18,9 +21,9 @@ class BgPanel extends JPanel implements ActionListener{
     }
     public void paintComponent(Graphics g)
     {
-        Image im = null;
+        BufferedImage im = null;
         try {
-            im = ImageIO.read(new File("O:\\Java\\LitRPG\\src\\com\\company\\graphics\\image\\main_image.jpg"));
+            im = ImageIO.read(new File("src\\com\\company\\graphics\\image\\bgimage.jpg"));
         } catch (IOException e) {}
         g.drawImage(im, 0, 0,frame.getWidth(),frame.getHeight(), null);
     }
