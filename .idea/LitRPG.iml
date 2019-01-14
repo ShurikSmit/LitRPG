@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jasypt-1.9.2-lite" level="project" />
+    <orderEntry type="library" name="jasypt-1.9.2-lite1" level="project" />
   </component>
 </module>

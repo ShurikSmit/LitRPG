@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="jasypt-1.9.2-lite">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../lib/jasypt-1.9.2-lite.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
