@@ -9,7 +9,7 @@ public class Money {
         moneySilver=0;
         moneyCopper = 0;
     }
-    Money(int Gold, int Silver, int Copper){
+    public Money(int Gold, int Silver, int Copper){
         moneyGold = Gold;
         moneySilver =Silver;
         moneyCopper=Copper;
@@ -50,7 +50,7 @@ public class Money {
         }
     }
 
-   public void sumMoney (){
+   public void showMoney (){
         System.out.println(getMoneyGold()+" золотых "+getMoneySilver()+" себрянных "+getMoneyCopper()+" медных");
     }
     // меняет значения денег Если add true то плюсует.

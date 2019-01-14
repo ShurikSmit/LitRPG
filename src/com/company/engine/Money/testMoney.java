@@ -5,11 +5,11 @@ public class testMoney {
         //Money money = new Money();
         Money money = new Money(1,91,99);
         System.out.println("den`gi money" );
-        money.sumMoney();
+        money.showMoney();
 //        money.changeMoney(true,1,2,999 );
-//        money.sumMoney();
+//        money.showMoney();
 //        money.changeMoney(false,1,2,999 );
-//        money.sumMoney();
+//        money.showMoney();
         PlayerMoney playerMoney = new PlayerMoney();
 
 
@@ -17,7 +17,7 @@ public class testMoney {
        tradeMoney.takeMoney(money);
 
        System.out.println("den`gi money" );
-       money.sumMoney();
+       money.showMoney();
 
     }
 }
