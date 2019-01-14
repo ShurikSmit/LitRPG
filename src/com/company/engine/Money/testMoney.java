@@ -14,7 +14,7 @@ public class testMoney {
         PlayerMoney playerMoney = new PlayerMoney();
 
 
-       TradeMoney tradeMoney = new TradeMoney(2, 5, 1);
+       TradeMoney tradeMoney = new TradeMoney(40001);
         System.out.println("Сумма сделки" );
         tradeMoney.showMoney();
         System.out.println("Даю деньгу");

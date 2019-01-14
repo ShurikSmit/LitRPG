@@ -9,9 +9,9 @@ public class TradeMoney extends Money {
         setMoneyCopper(MoneyCopper);
     }
     public TradeMoney(int MoneyCopper){
-        setMoneyCopper(MoneyCopper);
         setMoneySilver(0);
         setMoneyGold(0);
+        setMoneyCopper(MoneyCopper);
     }
     public TradeMoney(Money personMoney){
         this.setMoneyGold(personMoney.getMoneyGold());
