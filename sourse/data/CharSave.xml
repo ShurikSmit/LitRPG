@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<CharList>
+    <CharName></CharName>
+    <CharStats>
+        <STR></STR>
+        <INT></INT>
+        <AGIL></AGIL>
+    </CharStats>
+    <CharMoney>
+        <GOLD></GOLD>
+        <SILVER></SILVER>
+        <COPPER></COPPER>
+    </CharMoney>
+</CharList>
