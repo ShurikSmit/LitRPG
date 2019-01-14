@@ -69,7 +69,7 @@ public class Money {
         int Copper = moneyGold*10000+moneySilver*100+moneyCopper;
         return Copper;
    }
-
+   //конвертация коппера в золота серебро коппер
    public void convertedCopperToBasic(int Copper){
         setMoneyCopper(Copper);
    }
