@@ -31,8 +31,8 @@ public class TradeMoney extends Money {
     public void giveMoney(Money personMoney){
         if(checkMoney(personMoney)) {
             PlayerMoney playerMoney = new PlayerMoney();
-//        System.out.println("den`gi player" );
-//        playerMoney.sumMoney();
+        System.out.println("den`gi player do zdelki" );
+        playerMoney.showMoney();
 //        System.out.println("den`gi player give money" );
 //        showMoney();
             int newPlayerMoney = playerMoney.convertedToCopper() - convertedToCopper();
@@ -40,15 +40,15 @@ public class TradeMoney extends Money {
 
             int newPersonMoney = personMoney.convertedToCopper() + convertedToCopper();
             personMoney.convertedCopperToBasic(newPersonMoney);
-//        System.out.println("den`gi player" );
-//        playerMoney.showMoney();
+        System.out.println("den`gi player posle zdelki" );
+        playerMoney.showMoney();
         }
     }
     public void takeMoney(Money personMoney){
         if(checkMoney(personMoney)) {
             PlayerMoney playerMoney = new PlayerMoney();
-//        System.out.println("den`gi player" );
-//        playerMoney.sumMoney();
+        System.out.println("den`gi player do zdelki" );
+        playerMoney.showMoney();
 //        System.out.println("den`gi player give money" );
 //        showMoney();
             int newPlayerMoney = playerMoney.convertedToCopper() + convertedToCopper();
@@ -56,8 +56,8 @@ public class TradeMoney extends Money {
 
             int newPersonMoney = personMoney.convertedToCopper() - convertedToCopper();
             personMoney.convertedCopperToBasic(newPersonMoney);
-//        System.out.println("den`gi player" );
-//        playerMoney.sumMoney();
+        System.out.println("den`gi player posle zdelki" );
+        playerMoney.showMoney();
         }
     }
 
