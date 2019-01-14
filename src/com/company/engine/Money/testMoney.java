@@ -20,7 +20,7 @@ public class testMoney {
         System.out.println("Даю деньгу");
        tradeMoney.giveMoney(money);
         System.out.println("Забираю деньгу");
-        tradeMoney.giveMoney(money);
+        tradeMoney.takeMoney(money);
        System.out.println("den`gi money" );
        money.showMoney();
 
